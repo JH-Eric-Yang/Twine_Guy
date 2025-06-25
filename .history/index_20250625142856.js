@@ -20,10 +20,7 @@ if (!fs.existsSync(logsDir)) {
   fs.mkdirSync(logsDir, { recursive: true });
 }
 
-app.get("/",(req,res) => {
-  //render html page
-  res.sendFile(path.join(__dirname, "index.html"));
-})
+app.get()
 
 // POST /log route
 app.post("/log", (req, res) => {

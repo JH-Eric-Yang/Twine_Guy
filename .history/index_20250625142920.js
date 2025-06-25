@@ -21,8 +21,7 @@ if (!fs.existsSync(logsDir)) {
 }
 
 app.get("/",(req,res) => {
-  //render html page
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.send(study)
 })
 
 // POST /log route
