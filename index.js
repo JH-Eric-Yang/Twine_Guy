@@ -22,7 +22,7 @@ if (!fs.existsSync(logsDir)) {
 
 app.get("/",(req,res) => {
   //render html page
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "Study_One_Main_1.html"));
 })
 
 // POST /log route
